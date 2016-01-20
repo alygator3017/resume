@@ -15,3 +15,15 @@
     font-weight: bold;
     font-size: 1.4em;
 }
+
+.btn-text {
+    opacity: 1.8;
+}
+
+.index-button {
+    display:block;
+    margin-left:30%;
+    margin-right: 30%;
+    color:rgba(230, 230, 230, 1);
+    background: rgba(0,0,0,.4);
+}

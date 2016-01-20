@@ -1,0 +1,17 @@
+
+/* 
+    Created on : Jan 19, 2016, 10:34:24 PM
+    Author     : Alyson
+*/
+.colsize{
+    height: 250px;
+}
+
+.colsizebtm {
+    height: 600px;
+}
+
+.panel-heading{
+    font-weight: bold;
+    font-size: 1.4em;
+}

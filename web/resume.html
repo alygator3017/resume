@@ -15,7 +15,12 @@ and open the template in the editor.
         <script src="stickyfooter.js"></script>        
         <!--bootstrap-->
         <link rel="stylesheet" href="bootstrap.slate.min.css"/>
-        <script src="boostrap.min.js"></script>
+        <link rel="stylesheet" href="layout.css" type="text/css">
+
+
+        <script src="bootstrap.min.js"></script>
+        <!--modal-->
+        <script src="modal.js"></script>
         <title>ajs-Zimmel Portfolio</title>
     </head>
     <body>
@@ -52,52 +57,186 @@ and open the template in the editor.
             </div>
             <div class="container" style="padding-top: 60px">
                 <!--row 1-->
-                <div class="row">
+                <div class="row" style="text-align: center;">
                     <!--name and addy and phone and stuff-->
-                    <div class="panel panel-default col-lg-4">
-                        <div class="panel-heading">Panel heading</div>
+                    <div class="panel panel-default col-lg-4 colsize" >
+                        <div class="panel-heading">Personal Information</div>
                         <div class="panel-body">
-                            Panel content
+                            <p>Alyson Zimmel</p>
+                            <p>**** Vista Park Court</p>
+                            <p>Nashotah WI 53058</p>
+                            <p>M:262-***-****</p>
                         </div>
                     </div>
                     <!--personal details-->
-                    <div class="panel panel-default col-lg-4">
-                        <div class="panel-heading">Panel heading</div>
+                    <div class="panel panel-default col-lg-4 colsize">
+                        <div class="panel-heading">A Little More..</div>
                         <div class="panel-body">
-                            Panel content
+                            I am a programmer at heart. I have a passion for it.
+                            When I start a project I have imagine it from the ground up,
+                            trying to put together the pieces of the puzzle. I've 
+                            been taught to analyze a problems and find appropriate
+                            solutions using the tools I have. I've been trained
+                            in design patterns, analytics, customer relations,
+                            and making things pretty..... glitter?
                         </div>
                     </div>
                     <!--education info-->
-                    <div class="panel panel-default col-lg-4">
-                        <div class="panel-heading">Panel heading</div>
+                    <div class="panel panel-default col-lg-4 colsize">
+                        <div class="panel-heading">Education</div>
                         <div class="panel-body">
-                            Panel content
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#wctcModal">
+                                WCTC 2010-2016
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="wctcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Waukesha County Technical College</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">
+                                                    <h4 class="list-group-item-heading">School Information</h4>
+                                                    <p class="list-group-item-text">Graduating in Dec of 2016 With a degree in Web and Software development 
+                                                        at WCTC in Peewaukee WI. </p>
+                                                </a>
+                                                <a href="#" class="list-group-item">
+                                                    <h4 class="list-group-item-heading">Accomplishments</h4>
+                                                    <p class="list-group-item-text"> Tentative GPA:3.93 
+                                                        Did development in ASP .Net completing 2 functional shopping websites
+                                                        both receiving full points. Development also in Java software development creating a system for a 
+                                                        parking garage using design patterns and best practices which received full points. Was a project 
+                                                        lead for an IT infrastructure project. Developed 3 resume websites and one website for a Christmas 
+                                                        Tree business as training. Expected to graduate in December of 2016 with 78 credits.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#spModal">
+                                UW- Stevens Point 2006-2007
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="spModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">University of Wisconsin Stevens Point</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">
+                                                    <h4 class="list-group-item-heading">School Information</h4>
+                                                    <p class="list-group-item-text"> Was in the Music Education program from 2006 to 2007. Minored in English. </p>
+                                                </a>
+                                                <a href="#" class="list-group-item">
+                                                    <h4 class="list-group-item-heading">Accomplishments</h4>
+                                                    <p class="list-group-item-text">Extensive concert experience. Group, quartet, duet and solo. </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <!--dev skills progress bars-->
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" style="width: 100%">HTML</div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 80%">CSS</div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" style="width: 40%">JavaScript</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" style="width: 70%">jQuery</div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 40%">.Net</div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" style="width: 50%">iOS Objective C</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" style="width: 60%">Java</div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 10%">PHP</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" style="width: 50%">SQL</div>
+                    </div>
                 </div>
-                <div class="row">
+                <div class="row" style='text-align: center'>
                     <!--Skills-->
-                    <div class="panel panel-default col-lg-4">
-                        <div class="panel-heading">Panel heading</div>
-                        <div class="panel-body">
-                            Panel content
+                    <div class="panel panel-default col-lg-4 colsizebtm" >
+                        <div class="panel-heading">Skills</div>
+                        <div class="panel-body" style="text-align: left">
+                            <ul>
+                                <li>Goal Oriented</li>
+                                <li>Listening Skills</li>
+                                <li>Customer Oriented</li>
+                                <li>Energetic Self Starter</li>
+                                <li>POS Systems</li>
+                                <li>Fast paced learning</li>
+                                <li>Strong lead development skills</li>
+                                <li>13 years of Customer service experience</li>
+                                <li>Works diligently under pressure</li>
+                                <li>Glitter</li>
+                                <li>Written and oral skills</li>
+                                <li>Computer Proficient</li>
+                                <li>Microsoft office</li>
+                                <li>Adobe</li>
+                                <li>Google Master</li>
+                                <li>Excellent Communication Skills</li>
+                                <li>Reading Comprehension skills</li>
+                                <li>Excited to create new things</li>
+                                <li>unicorns</li>
+                            </ul>
                         </div>
                     </div>
                     <!--Employment-->
-                    <div class="panel panel-default col-lg-4">
-                        <div class="panel-heading">Panel heading</div>
+                    <div class="panel panel-default col-lg-4 colsizebtm">
+                        <div class="panel-heading">Employment- Aurora Medical Center</div>
                         <div class="panel-body">
-                            Panel content
+                            <p>Summit WI Feb 2010 to Current</p>
+                            <p>Food Service Assistant</p>
+                            <p>Ran a small coffee shop, developed new beverage items and over saw daily operations. Managed 2 team members, including training and conflict resolution. Maintained calm demeanor during high-volume periods and special events. Designed and printed menus, recipes and promotions and offers.Greeted and connected with every customer, recommending drinks and pastries. Managed inventory by establishing and adjusting ordering parameters, forecasting usage and controlling waste. Supported store manager with recruiting, interviewing and hiring baristas. Developed creative and appealing latte art techniques and instructed coworkers in method. Developed all menu boards and created a pricing database. Developed slide shows for dining room televisions.
+                                Apportioned and served food to facility residents, employees, or patrons. Assisted co-workers. Checked the quantity and quality of received products. Cleaned and maintained the beverage area, display cases, equipment, and order transaction area. Cleaned and prepared various foods for cooking or serving. 
+                            </p>
                         </div>
                     </div>
                     <!--Employment-->
-                    <div class="panel panel-default col-lg-4">
-                        <div class="panel-heading">Panel heading</div>
+                    <div class="panel panel-default col-lg-4 colsizebtm">
+                        <div class="panel-heading">Employment- Pick n Slave</div>
                         <div class="panel-body">
-                            Panel content
+                            <p>Peewaukee WI Jan 2008 to Jan 2010</p>
+                            <p>Bakery Clerk</p>
+                            <p>Monitored cooking completion times for efficient use of ovens and other equipment. Followed code dating procedures and adhered to legal regulations governing product labeling and packaging. Controlled spoilage by generating turn movement and maintaining monthly inventory. Maintained safe and sanitary area by checking food products’ temperature and freshness. Placed dough in pans, molds and sheets; monitoring products during baking and adjusting temperatures as needed. Offered product samples and answered product questions for wholesale customers. Invoiced customers in timely and accurate manner. Designed appealing product displays. Maintained current knowledge of pricing, ingredients, product availability and current promotion. Safely operated oven, proof box, mixer, bread machine, floor scrubber, dishwasher, rack washer, pallet jack and DIGI printer. Maintained daily pars to ensure availability of products at all times. Worked as clerk, decorator and baker on a rotating schedule. 
+                            </p>
                         </div>
                     </div>
                 </div>
